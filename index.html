@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendors/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/38bac47577.js" crossorigin="anonymous"></script>
+    <title>Sadik Turan bootstrap</title>
+    <style>
+        body {
+            position: relative;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="30" >
+    <!-- nav -->
+    <nav class="navbar navbar-expand-sm bg-success navbar-dark mb-3 fixed-top">
+        <a href="#" class="navbar-brand">Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+            <div class="collapse navbar-collapse" id="collapseNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" data-spy="scroll">Home</a>
+                </li>
+        
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-spy="scroll">About</a>
+                </li>
+        
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-spy="scroll">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="home" class="bg-info" style="padding-bottom: 400px; padding-top: 400px;">
+        <h1>HOME</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptates odit culpa velit iste repudiandae eum asperiores expedita officia sit libero, nulla eos qui, recusandae quam amet et voluptatum quo.</p>
+    </div>
+    <div id="about" class="bg-primary" style="padding-bottom: 400px; padding-top: 400px;">
+        <h1>ABOUT</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptates odit culpa velit iste repudiandae eum asperiores expedita officia sit libero, nulla eos qui, recusandae quam amet et voluptatum quo.</p>
+    </div>
+    <div id="contact" class="bg-warning" style="padding-bottom: 400px; padding-top: 400px;">
+        <h1>CONTACT</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptates odit culpa velit iste repudiandae eum asperiores expedita officia sit libero, nulla eos qui, recusandae quam amet et voluptatum quo.</p>
+    </div>
+
+
+
+    <!-- jumboton -->
+
+    <div class="jumbotron mt-5">
+        <h1>Lorem ipsum dolor sit.</h1>
+        <p class="lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas blanditiis nisi beatae. Dolorum, numquam nam recusandae optio cumque ad obcaecati.
+        </p>
+    </div>
+<!-- breadcrumb -->
+    <div class="container w-45">
+           <ol class="breadcrumb">
+               <li class="breadcrumb-item"><a href="#">Products</a></li>
+               <li class="breadcrumb-item">Details</li>
+           </ul>
+    </div>
+<!-- dropdown -->
+    <button class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+        Dropdown Menu
+    </button>
+<div class="dropdown-menu">
+    <a href="#" class="dropdown-item">Link1</a>
+    <a href="#" class="dropdown-item">Link2</a>
+    <a href="#" class="dropdown-item">Link3</a>
+</div>
+<!-- btn-group -->
+<div class="btn-group">
+    <button class="btn btn-secondary">Secondary</button>
+    <button class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"></button>
+    <div class="dropdown-menu">
+        <a href="#" class="dropdown-item"> link 1</a>
+        <a href="#" class="dropdown-item"> link 2</a>
+    </div>
+</div>
+<!-- collapse -->
+<div class="container mt-4">
+<p> 
+    <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#content">
+Button
+    </button>
+
+    <a href="#content" class="btn btn-success" data-toggle="collapse">Link</a>
+</p>
+
+<div id="content">
+    <h2>Lorem ipsum dolor sit.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, dicta recusandae consequatur deserunt porro mollitia at accusantium obcaecati, eum neque necessitatibus et natus quia tempora!</p>
+</div>
+</div>
+<!-- accordion -->
+
+<div id="accordion">
+    <div class="card">
+        <div class="card-header">
+            <a href="#collapseOne" class="card-link text-dark" data-toggle="collapse">item 1</a>
+        </div>
+        <div id="collapseOne" class="collapse" data-parent="#accordion">
+        <div class="card-body" >
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aspernatur sunt odio laudantium explicabo? Odit!</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <a href="#collapseTwo" class="card-link text-dark" data-toggle="collapse">item 2</a>
+        </div>
+        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="card-body" >
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aspernatur sunt odio laudantium explicabo? Odit!</p>
+        </div>
+    </div>
+    </div>
+</div>
+<!-- carousel -->
+<div class="container my-5">
+    <div id="slider1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/smile.jpg" class="d-block" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="img/afr.jpg" class="d-block" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="img/20180922_ldp501.jpg" class="d-block" alt="">
+            </div>
+        </div>
+        <a href="#slider1" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-prev-icon"></span>
+        </a>
+        <a href="#slider1" class="carousel-control-next" data-slide="next">
+            <span class="carousel-next-icon"></span>
+        </a>
+    </div>
+</div>
+<!-- indicator -->
+ <div id="slider2" class="carousel slide m-5" data-ride="carousel">
+            <ol  class="carousel-indicators">
+                <li data-target="#slider2" data-slide-to="0" class="active"></li>
+                <li data-target="#slider2" data-slide-to="1"></li>
+                <li data-target="#slider2" data-slide-to="2"></li>
+            </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/smile.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption">
+                    <h5>Lorem, ipsum dolor.</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nobis laboriosam fugit laborum earum! Deleniti?</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/afr.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption">
+                    <h5>Lorem, ipsum dolor.</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nobis laboriosam fugit laborum earum! Deleniti?</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/20180922_ldp501.jpg" class="d-block w-100" alt="">
+                <div class="carousel-caption">
+                    <h5>Lorem, ipsum dolor.</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nobis laboriosam fugit laborum earum! Deleniti?</p>
+                </div>
+            </div>
+        </div>
+        <a href="#slider2" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#slider2" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+<!-- modal -->
+<div class="container my-5">
+    <button class="btn btn-outline-success" data-toggle="modal" data-target="#myModal">
+        Open Modal
+    </button>
+
+    <div id="myModal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Lorem, ipsum.</h4>
+                    <button class="close" data-dismiss="modal">&times</button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, exercitationem!</p>
+                </div>
+                <div class="modal-footer">
+                    <p>Lorem, ipsum.</p>
+                    <button class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- tooltip -->
+
+<div class="container my-5">
+    <a href="#" class="btn btn-outline-success" data-toggle="tooltip" title="tooltip text">Hover over me</a>
+</div>
+
+<!-- popover -->
+<div class="container my-5">
+    <a href="#" data-toggle="popover" class="btn btn-outline-success" title="Tooltip header" data-content="Text content">Popover</a>
+</div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html>
